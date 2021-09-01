@@ -1,0 +1,35 @@
+<ion-header>
+
+  <ion-toolbar>
+    <ion-title>Retail Off</ion-title>
+  </ion-toolbar>
+
+<ion-toolbar>    
+  <ion-buttons collapse="true" slots="start"> 
+   <ion-back-button text="" defaultHref="/logon"></ion-back-button>
+   <ion-title >Clientes</ion-title>
+  </ion-buttons>
+  
+</ion-toolbar>
+
+</ion-header>
+
+<ion-content [scrollEvents]="false" [fullscreen]="false">
+
+<ion-card>
+<ion-card-content>
+
+  <ion-item>
+    <ion-label position="floating">Email</ion-label>
+    <ion-input type="text" [(ngModel)]='user.email'></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Username</ion-label>
+    <ion-input type="text" [(ngModel)]='user.username'></ion-input>
+  </ion-item>
+           
+   <ion-button type="submit" expand="full" (click)='postUser()'>Agregar</ion-button>
+  </ion-card-content>
+</ion-card>
+
+</ion-content>

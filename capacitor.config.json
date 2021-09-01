@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "multiplataforma",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
